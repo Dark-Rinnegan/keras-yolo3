@@ -401,8 +401,8 @@ def get_image_paths(folder_path):
 
 def write_prediction_report(predictions, output_path):
     f = open(output_path, "w")
+    f.write('pred | box.xmin, box.ymin, box.xmax, box.ymax | score\n')
     for i in predictions:
-        f.write('pred | box.xmin, box.ymin, box.xmax, box.ymax | score')
         f.write(i + '\n')
     f.close()
 
