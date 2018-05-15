@@ -1,5 +1,11 @@
 # YOLO3 (Detection, Training, and Evaluation)
 
+# Requirements
+
+- [X] Keraas
+
+- [X] Tensorflow >= 1.4
+
 ## Dataset and Model
 
 Dataset | mAP | Config | Model | Demo
@@ -22,7 +28,7 @@ VOC (20 classes) (http://host.robots.ox.ac.uk/pascal/VOC/voc2012/) | 72% | check
 
 Grab the pretrained weights of yolo3 from https://pjreddie.com/media/files/yolov3.weights.
 
-```python yolo3_one_file_to_detect_them_all.py -w yolo3.weights -i dog.jpg``` 
+```python yolo3_one_file_to_detect_them_all.py -w yolo3.weights -f $$(pwd)/test/1.jpg``` 
 
 ## Training
 
